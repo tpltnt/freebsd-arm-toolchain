@@ -17,10 +17,13 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+# create directories
 mkdir -p ~/arm-toolchain/native-gcc/src
+mkdir -p ~/arm-toolchain/native-gcc/obj/gcc
+mkdir -p ~/arm-toolchain/native-gcc/target
+# get gcc source, unpack it, configure & compile bootstrap-gcc
 cd ~/arm-toolchain/native-gcc/src
 wget ftp://ftp.gnu.org/gnu/gcc/gcc-4.3.6/gcc-4.3.6.tar.bz2
-mkdir -p ~/arm-toolchain/native-gcc/obj/gcc && mkdir ~/arm-toolchain/native-gcc/target
 tar ­xjf gcc-4.3.6.tar.bz2
 cd ../obj/gcc
 ../../src/gcc-4.3.6/configure \
