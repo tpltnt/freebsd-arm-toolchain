@@ -22,6 +22,7 @@ cd ~/arm-toolchain/native-gcc/src
 wget ftp://ftp.gnu.org/gnu/gcc/gcc-4.3.6/gcc-4.3.6.tar.bz2
 mkdir -p ~/arm-toolchain/native-gcc/obj/gcc && mkdir ~/arm-toolchain/native-gcc/target
 tar ­xjf gcc-4.3.6.tar.bz2
+cd ../obj/gcc
 ../../src/gcc-4.3.6/configure \
 --enable-languages=c,c++ \
 --enable-shared \
